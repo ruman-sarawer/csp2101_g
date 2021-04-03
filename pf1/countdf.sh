@@ -11,7 +11,7 @@ input=$@ #value from input stored in variable
 tail="/*" #tail end for the pathname
 t=$input$tail #concatenating received path with tail end
 
-#loop. Looping inside the directory
+#For loop. Looping inside the directory
 for f in $t 
 do
 if [[ -d $f ]]; then #Check if its a valid directory
